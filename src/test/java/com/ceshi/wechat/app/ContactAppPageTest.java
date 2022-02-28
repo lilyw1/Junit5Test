@@ -31,10 +31,10 @@ public class ContactAppPageTest {
     @AfterAll
     static void afterAll(){
         //如果进程被非正常终止，afterall可能得不到正常执行
-        //wework.close();
+        wework.close();
     }
     @Test
-    void addMember() throws MalformedURLException {
+    void addMember() throws Exception {
         String name = "ckjava22_" + generateMobile();
         String mobile = generateMobile();
 
